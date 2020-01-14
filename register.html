@@ -1,0 +1,87 @@
+<html>
+<body style="font-family:Arial;">
+    <style type="text/css">
+
+    .error{
+        color: #FF0000;
+        }
+
+    .text{
+        color:#494949;
+    }
+    .box{
+        color:#494949;
+        height:28px;
+        width:270px;
+        margin-bottom:16px;
+    }
+
+    </style>
+<center>
+    <div style="border:solid black 1px;width:49%;height:85%;padding-top:0%;padding-bottom:0%;" >
+            <table style="width:100%;background-color:#E50000;padding-top:3px;padding-bottom:3px;padding-left:2px;padding-right:2px;">
+                    <tr>
+                        <td><img src="logo.jpg" style="width:245px;height:40px;background-color:#FEECEC;">
+                        </td>
+                        <td align="right">
+                        <select style="background-color:#FEECEC;width:63px;font-size:12px;">
+                            <option selected>English</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+<h4 style="color:#424242;margin-top:30px;">WELCOME TO INTI COLLEGE ENROLMENT SYSTEM</h4>
+<p style="color:#5C5C5C;margin-top:6%;">REGISTER</p>
+<hr style="width:180px;border:solid 1px;color:#D8D8D8;margin-top:-1%;">
+<form action="enroll.php" method="POST">
+<br>
+<table>
+    <tr>
+        <td class="text">Matriculation No.:</td>
+    </tr>
+    <tr>
+        <td><input type="text" class="box" name="id" required></td>
+    </tr>
+    <tr>
+        <td class="text">Student Name:</td>
+    </tr>
+    <tr>
+        <td><input type="text" class="box" name="name" required></td>
+    </tr>
+    <tr>
+        <td class="text">Session:</td>
+    </tr>
+    <tr>
+        <td><input type="text" class="box" name="ses" required></td>
+    </tr>
+    <tr>
+        <td class="text">Programme:</td>
+    </tr>
+    <tr>
+        <td><select class="box" name="prog" required>
+            <option disabled selected value >select one programme</option>
+            <option value="DIB: Diploma in Business">DIB: Diploma in Business</option>
+            <option value="DITN: Diploma in Information Technology">DITN: Diploma in Information Technology</option>
+            <option value="DMEN: Diploma in Mechanical Engineering">DMEN: Diploma in Mechanical Engineering</option>
+            <option value="DMCN: Diploma in Mass Communication">DMCN: Diploma in Mass Communication</option>
+        </select>
+    </tr>
+    <tr>
+        <td class="text">Semester:</td>
+    </tr>
+    <tr>
+        <td><input name="sem" type="number" class="box" required></td>
+    </tr>
+</table><?php
+?><br>
+<button type="submit" name="login" style="width:99px;height:30px;color:white;border:0;background-color:#E50000;">COMFIRM</button>
+</form>
+<p style="font-size:9px;color:white;background-color:black;padding:3px;margin-top:30px;">&copy; Copyright 2019 INTI International University & Colleges. All Rights Reserved.</p>
+</div>
+</center>
+</body>
+</html>
+
+
+
+
